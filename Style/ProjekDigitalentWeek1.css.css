@@ -1,0 +1,195 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body {
+    font-family: 'Roboto', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+li {
+    list-style: none;
+}
+
+li:hover:not(.active) {
+    background-color: #111;
+}
+
+.header {
+    background-color: #26d0c9;
+    color: #fff;
+    height: 85px;
+}
+  
+.header-logo {
+    float: left;
+    font-size: 36px;
+    padding: 20px 40px;
+}
+  
+.header-list li {
+    float: left;
+    padding: 33px 20px;
+}
+
+header {
+    background-color: rgb(218, 128, 45);
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header h1 {
+    padding: 22px 0px;
+}
+
+.typing {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typingAnim 3s steps(27);
+}
+
+@keyframes typingAnim {
+    from {width: 0}
+    to {width: 100%}
+}
+
+ul h1 {
+    list-style: none;
+    width: 100%;
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 18px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4caf50;
+}
+
+li a:hover.active {
+    background-color: #4caf50;
+}
+ 
+.main {
+    padding: 100px 80px;
+}
+
+.main img {
+    padding-top: 35px;
+    padding-bottom: 5px;
+}
+
+.copy-container h2 {
+    font-size: 60px;
+}
+  
+.copy-container span {
+    color: #ff4a4a;
+}
+  
+.contents {
+    height: 500px;
+    margin-top: 100px;
+}
+
+.contents-item {
+    float: left;
+    margin-right: 40px;
+}
+
+.contents-item p {
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+aside {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-form {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.contact-form h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+  
+input, textarea {
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid #dee7ec;
+}
+  
+  .contact-submit {
+    background-color: #dee7ec;
+    color: #889eab;
+}  
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(109, 76, 52);
+    margin-top: 5px;
+}
+
+@media all and (max-width: 1000px) {
+    ul {
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul li {
+        display: inline-block;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside h3, table {
+        text-align: center;
+    }
+
+    table {
+        margin: auto;
+    }
+}
+
+@media screen and ( max-width:576px ) {
+    header h1 {
+        font-size: 30px;
+    }
+
+}
